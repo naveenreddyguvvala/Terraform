@@ -1,0 +1,15 @@
+cat <<EOL > .gitignore
+# Ignore Terraform plugin directory
+.terraform/
+
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Ignore CLI config files
+.terraformrc
+terraform.rc
+
+# Ignore plan output
+*.tfplan
+EOL
